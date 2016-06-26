@@ -35,6 +35,58 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(songListIntent);
             }
         });
+
+        TextView trendingAlbum2 = (TextView) findViewById(R.id.trending_album_2);
+
+        trendingAlbum2.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent songListIntent = new Intent(MainActivity.this, SongListActivity.class);
+                startActivity(songListIntent);
+            }
+        });
+
+        TextView recentAlbum1 = (TextView) findViewById(R.id.recent_album_1);
+
+        recentAlbum1.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent songListIntent = new Intent(MainActivity.this, SongListActivity.class);
+                startActivity(songListIntent);
+            }
+        });
+
+        TextView recentAlbum2 = (TextView) findViewById(R.id.recent_album_2);
+
+        recentAlbum2.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent songListIntent = new Intent(MainActivity.this, SongListActivity.class);
+                startActivity(songListIntent);
+            }
+        });
+
+        TextView Album2 = (TextView) findViewById(R.id.album_2);
+
+        Album2.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent songListIntent = new Intent(MainActivity.this, SongListActivity.class);
+                startActivity(songListIntent);
+            }
+        });
+
+        TextView Album1 = (TextView) findViewById(R.id.album_1);
+
+        Album1.setOnClickListener(new OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent songListIntent = new Intent(MainActivity.this, SongListActivity.class);
+                startActivity(songListIntent);
+            }
+        });
+
+
     }
 
 

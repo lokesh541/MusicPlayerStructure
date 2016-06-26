@@ -1,9 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scrollView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.android.musicstructureapp.MainActivity">
+    android:fillViewport="true"
+    tools:context="com.example.android.musicstructureapp.MainActivity"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
 
     <TextView
         android:id="@+id/trending_music"
@@ -21,12 +28,13 @@
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/trending_album_1"
             style="@style/CategoryStyle"
             android:background="@color/category_trending"
-            android:text="Trending Album 1"
-            android:id="@+id/trending_album_1"/>
+            android:text="Trending Album 1" />
 
         <TextView
+            android:id="@+id/trending_album_2"
             style="@style/CategoryStyle"
             android:background="@color/category_trending"
             android:text="Trending Album 2" />
@@ -42,30 +50,32 @@
         android:text="Browse albums" />
 
     <LinearLayout
+        android:id="@+id/browse_albums_content"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/browse_albums_content"
         android:layout_below="@+id/browse_albums">
 
         <TextView
+            android:id="@+id/album_1"
             style="@style/CategoryStyle"
             android:background="@color/category_browse_albums"
             android:text="Album 1" />
 
         <TextView
+            android:id="@+id/album_2"
             style="@style/CategoryStyle"
             android:background="@color/category_browse_albums"
             android:text="Album 2" />
     </LinearLayout>
 
     <TextView
+        android:id="@+id/recently_played"
         style="@style/CategoryNameStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/recently_played"
-        android:layout_below="@+id/browse_albums_content"
         android:layout_alignParentEnd="true"
         android:layout_alignParentRight="true"
+        android:layout_below="@+id/browse_albums_content"
         android:text="Recently listened" />
 
     <LinearLayout
@@ -76,13 +86,13 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/album_1"
+            android:id="@+id/recent_album_1"
             style="@style/CategoryStyle"
             android:background="@color/category_recently_played"
             android:text="Recent Album 1" />
 
         <TextView
-            android:id="@+id/album_2"
+            android:id="@+id/recent_album_2"
             style="@style/CategoryStyle"
             android:background="@color/category_recently_played"
             android:text="Recent Album 2" />
@@ -98,3 +108,4 @@
 
 
 </RelativeLayout>
+</ScrollView>
